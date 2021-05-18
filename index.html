@@ -150,34 +150,33 @@
           <div class="card-body">
               <div class="row">
                   <div class="col-md-3">
-                      <div class="form-group mb-0">
-                          <label>Заказ или товар</label>
+                      <div class="form-group mb-2">
+                          <label>First Name</label>
                           <input type="text" class="form-control"/>
                       </div>
                   </div>
                   <div class="col-md-3">
                       <div class="form-group mb-0">
-                          <label>Дата  с по</label>
+                          <label>Last Name</label>
                           <input type="text" class="form-control"/>
                       </div>
                   </div>
                   <div class="col-md-3">
-                      <div class="form-group mb-0">
-                          <label>Статус</label>
-                          <select class="form-control">
-                              <option value="opt1">Новый</option>
-                              <option value="opt2">Ждет подтверждения</option>
-                              <option value="opt3">Отказ</option>
-                          </select>
-                      </div>
-                  </div>
+                    <div class="form-group mb-0">
+                        <label>Email</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group mb-0">
+                        <label>Phone number</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
                   <div class="col-md-3">
                       <div class="form-group mb-0">
-                          <label>Контрагент</label>
-                          <select class="form-control">
-                              <option value="opt1">ИП Петрова</option>
-                              <option value="opt2">Личные</option>
-                          </select>
+                          <label>joined timestamp</label>
+                          <input type="text" class="form-control"/>
                       </div>
                   </div>
                   <div class="col-md-3">
@@ -188,7 +187,7 @@
                                   <i class="icon-search4"></i>
                               </button>
                               <button type="button" class="btn btn-light" ng-click="resetSearch()">
-                                  Сбросить
+                                  Clean
                               </button>
                           </div>
                       </div>
@@ -205,170 +204,78 @@
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th>Номер</th>
-                        <th>Дата</th>
-                        <th>Клиент</th>
-                        <th>Телефон</th>
-                        <th>В корзине</th>
-                        <th>Сайт</th>
+                        <th>id</th>
+                        <th>Joined timestamp</th>
+                        <th>Client</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Referal Code</th>
                         <th></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><a href="[[~26]]">12</a></td>
+                        <td><a href="[[~26]]">345</a></td>
                         <td>20.03.17</td>
                         <td>
                           <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face1.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Иванов Иван</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            <div class="mr-3"><a href="#" class="btn bg-blue rounded-round btn-icon btn-sm">
+															<span class="letter-icon">II</span>
+														</a></div>
+                            <div><span class="text-default font-weight-semibold">Ivanputra Ivanitra</span>
+                              <div class="text-muted font-size-sm">Referral: 12</div>
                             </div>
                           </div>
                         </td>
-                        <td><span>1231231313</span></td>
+                        <td><span>+91-6756574635</span></td>
                         <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                          <span class="text-default font-weight-semibold">ivanputra@ruty.in</span>
                         </td>
-                        <td class=""><span>https://planeta-electro.com/</span></td>
+                        <td class=""><span>Ivanitra234</span></td>
                         <td>
                           <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
                         </td>
                       </tr>
                       <tr>
-                        <td><a href="[[~26]]">13</a></td>
+                        <td><a href="[[~26]]">344</a></td>
                         <td>20.03.17</td>
                         <td>
                           <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face8.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Петров Федор</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            <div class="mr-3"><a href="#" class="btn bg-green rounded-round btn-icon btn-sm">
+															<span class="letter-icon">TP</span>
+														</a></div>
+                            <div><span class="text-default font-weight-semibold">Tragya Pampartyda</span>
+                              <div class="text-muted font-size-sm">Referral: 12</div>
                             </div>
                           </div>
                         </td>
-                        <td>345-56475647</td>
-                        <td><span class="text-default font-weight-semibold">3,000 ₽</span></td>
-                        <td>https://planeta-electro.com/</td>
+                        <td><span>+91-6756574635</span></td>
+                        <td>
+                          <span class="text-default font-weight-semibold">ivanputra@ruty.in</span>
+                        </td>
+                        <td class=""><span>Ivanitra234</span></td>
                         <td>
                           <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
                         </td>
                       </tr>
                       <tr>
-                        <td><a href="[[~26]]">14</a></td>
+                        <td><a href="[[~26]]">343</a></td>
                         <td>20.03.17</td>
                         <td>
                           <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face7.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Нумбаев Алексей</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            <div class="mr-3"><a href="#" class="btn bg-teal rounded-round btn-icon btn-sm">
+															<span class="letter-icon">SG</span>
+														</a></div>
+                            <div><span class="text-default font-weight-semibold">Sidhartha Gautama</span>
+                              <div class="text-muted font-size-sm">Referral: 12</div>
                             </div>
                           </div>
                         </td>
-                        <td>89234563377</td>
+                        <td><span>+91-6756574635</span></td>
                         <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                          <span class="text-default font-weight-semibold">ivanputra@ruty.in</span>
                         </td>
-                        <td>345-https://planeta-electro.com/</td>
-                        <td>
-                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="[[~26]]">15</a></td>
-                        <td>20.03.17</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face6.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Сидорова Ольга</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td>89117652343</td>
-                        <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
-                        </td>
-                        <td>https://planeta-electro.com/</td>
-                        <td>
-                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>20.03.17</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face5.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Коломяжко Антон</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td>89117652343</td>
-                        <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
-                        </td>
-                        <td>https://planeta-electro.com/</td>
-                        <td>
-                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>20.03.17</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face4.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Портнена Мария</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td>89117652343</td>
-                        <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
-                        </td>
-                        <td>https://planeta-electro.com/</td>
-                        <td>
-                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>12</td>
-                        <td>20.03.17</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face3.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Санина Татьяна</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td>89117652343</td>
-                        <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
-                        </td>
-                        <td>https://planeta-electro.com/</td>
-                        <td>
-                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="[[~26]]">12</a></td>
-                        <td>20.03.17</td>
-                        <td>
-                          <div class="d-flex align-items-center">
-                            <div class="mr-3"><a href="#"><img src="images/face2.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
-                            <div><span class="text-default font-weight-semibold">Рыжов Антон</span>
-                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
-                            </div>
-                          </div>
-                        </td>
-                        <td>89117652343</td>
-                        <td>
-                          <span class="text-default font-weight-semibold">3,000 ₽</span>
-                        </td>
-                        <td>https://planeta-electro.com/</td>
+                        <td class=""><span>Ivanitra234</span></td>
                         <td>
                           <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
                         </td>
