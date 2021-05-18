@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>NuCash ADMIN</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://cdn.nucash.net/Fonts/3/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="./css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/colors.min.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="./js/app.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body class="">
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light">
+		<div class="navbar-brand">
+			<a href="index.html" class="d-inline-block">
+				<img src="./images/logo-light.svg" alt="">
+			</a>
+		</div>
+
+		<div class="d-md-none">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+			</ul>
+
+			<span class="badge bg-success my-3 my-md-0 ml-md-3 mr-md-auto">Online</span>
+
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link caret-0">
+						<i class="icon-switch2"></i> 
+						<span class="ml-2">Logout</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- User menu -->
+				<div class="sidebar-user">
+					<div class="card-body">
+						<div class="media">
+							<div class="mr-3">
+								<a href="#" class="btn bg-teal-400 rounded-round btn-icon btn-sm">
+                  <span class="letter-icon">IA</span>
+                </a>
+							</div>
+
+							<div class="media-body">
+								<div class="media-title font-weight-semibold">Iklas Alzhanov</div>
+								<div class="font-size-xs opacity-50">
+									Administrator
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /user menu -->
+
+
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">
+								<i class="icon-home4"></i>
+								<span>
+									Dashboard
+								</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Content area -->
+			<div class="content">
+        <div class="card">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="form-group mb-0">
+                          <label>Заказ или товар</label>
+                          <input type="text" class="form-control"/>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group mb-0">
+                          <label>Дата  с по</label>
+                          <input type="text" class="form-control"/>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group mb-0">
+                          <label>Статус</label>
+                          <select class="form-control">
+                              <option value="opt1">Новый</option>
+                              <option value="opt2">Ждет подтверждения</option>
+                              <option value="opt3">Отказ</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group mb-0">
+                          <label>Контрагент</label>
+                          <select class="form-control">
+                              <option value="opt1">ИП Петрова</option>
+                              <option value="opt2">Личные</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group mb-0">
+                          <div style="height:28px"></div>
+                          <div>
+                              <button type="button" class="btn btn-light mr-2" ng-click="search()">
+                                  <i class="icon-search4"></i>
+                              </button>
+                              <button type="button" class="btn btn-light" ng-click="resetSearch()">
+                                  Сбросить
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+                <div class="card-header header-elements-inline">
+                  <h6 class="card-title">Клиенты</h6>
+                  <div class="header-elements"><button type="button" class="btn btn-outline bg-success-400 text-success-400 border-success-400 btn-sm" data-toggle="modal" data-target="#modal_default">Новый клиент</button></div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Номер</th>
+                        <th>Дата</th>
+                        <th>Клиент</th>
+                        <th>Телефон</th>
+                        <th>В корзине</th>
+                        <th>Сайт</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="[[~26]]">12</a></td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face1.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Иванов Иван</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td><span>1231231313</span></td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td class=""><span>https://planeta-electro.com/</span></td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="[[~26]]">13</a></td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face8.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Петров Федор</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>345-56475647</td>
+                        <td><span class="text-default font-weight-semibold">3,000 ₽</span></td>
+                        <td>https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="[[~26]]">14</a></td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face7.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Нумбаев Алексей</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>89234563377</td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td>345-https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="[[~26]]">15</a></td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face6.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Сидорова Ольга</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>89117652343</td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td>https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face5.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Коломяжко Антон</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>89117652343</td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td>https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face4.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Портнена Мария</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>89117652343</td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td>https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face3.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Санина Татьяна</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>89117652343</td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td>https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="[[~26]]">12</a></td>
+                        <td>20.03.17</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <div class="mr-3"><a href="#"><img src="images/face2.jpg" class="rounded-circle" width="32" height="32" alt=""></a></div>
+                            <div><span class="text-default font-weight-semibold">Рыжов Антон</span>
+                              <div class="text-muted font-size-sm">Дата рождения: 14.05.64</div>
+                            </div>
+                          </div>
+                        </td>
+                        <td>89117652343</td>
+                        <td>
+                          <span class="text-default font-weight-semibold">3,000 ₽</span>
+                        </td>
+                        <td>https://planeta-electro.com/</td>
+                        <td>
+                          <div class="list-icons"><a href="kartochka-klienta.html" class="list-icons-item"><i class="icon-pencil7"></i></a><a href="#" class="list-icons-item"><i class="icon-trash"></i></a></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; NuCash
+					</span>
+
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+						<li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+</body>
+</html>
