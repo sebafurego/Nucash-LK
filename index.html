@@ -122,7 +122,12 @@
 							</div>
 							<div class="col-md-3">
 								<div class="form-group mb-0">
-									<label>joined timestamp</label>
+									<label>Date from</label>
+									<input type="text" class="form-control" /> </div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group mb-0">
+									<label>Date to</label>
 									<input type="text" class="form-control" /> </div>
 							</div>
 							<div class="col-md-3">
@@ -130,7 +135,7 @@
 									<div style="height:28px"></div>
 									<div>
 										<button type="button" class="btn btn-light mr-2" ng-click="search()"> <i class="icon-search4"></i> </button>
-										<button type="button" class="btn btn-light" ng-click="resetSearch()"> Clean </button>
+										<button type="button" class="btn btn-light" ng-click="resetSearch()"> Clear </button>
 									</div>
 								</div>
 							</div>
@@ -139,9 +144,8 @@
 				</div>
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h6 class="card-title">Клиенты</h6>
+						<h6 class="card-title">Сustomers</h6>
 						<div class="header-elements">
-							<button type="button" class="btn btn-light btn-sm">New customer</button>
 						</div>
 					</div>
 					<div class="table-responsive">
@@ -149,11 +153,11 @@
 							<thead>
 								<tr>
 									<th>id</th>
-									<th>Joined timestamp</th>
-									<th>Client</th>
-									<th>Phone</th>
-									<th>Email</th>
+									<th>Name</th>
 									<th>State</th>
+									<th>Email</th>
+									<th>Phone</th>
+									<th>Joined</th>
 									<th width="80"></th>
 								</tr>
 							</thead>
